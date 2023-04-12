@@ -41,13 +41,12 @@ namespace DownloadPlatformTools
 
             Console.WriteLine($"Platform Tools instalado em {installPath}");
 
-            for (int i = 5; i > 0; i--)
-            {
-                Console.WriteLine($"Fechando em {i} segundos...");
-                await Task.Delay(1000);
-            }
-
-            Console.WriteLine("Fechando...");
+            Console.Write("Fechando em 3 segundos...");
+            await Task.Delay(1000);
+            Console.Write("\rFechando em 2 segundos...");
+            await Task.Delay(1000);
+            Console.Write("\rFechando em 1 segundo...");
+            await Task.Delay(1000);
         }
 
         static async Task<string> DownloadPageContent(string url)
