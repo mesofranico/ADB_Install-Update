@@ -1,4 +1,7 @@
 # ADB_Install-Update
+ADB Install.dll
+ADB Install.exe
+
 Install and update adb c:\
 
 # Adb.ps1
