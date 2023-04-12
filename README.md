@@ -1,18 +1,24 @@
-ADB Install-Update
-Descrição
-O projeto consiste em duas versões do instalador ADB, um em formato .dll e outro em formato .exe, além do código fonte em Source.cs. Além disso, o projeto inclui o script em PowerShell para instalar a última versão do Platform Tools.
+# ADB_Install-Update
 
-Instalação
-Para instalar o ADB, basta executar um dos arquivos de instalação (ADB Install.dll ou ADB Install.exe). Para instalar o Platform Tools com o script em PowerShell, é necessário executar o arquivo Adb.ps1 como administrador. A instalação será realizada em "C:".
+This repository contains the following files:
 
-Como contribuir
-Faça o fork do projeto
-Crie uma nova branch para as suas modificações (git checkout -b minha-branch)
-Faça as alterações necessárias e faça commit (git commit -am "Minhas modificações")
-Faça push para a branch (git push origin minha-branch)
-Crie um novo Pull Request
-Autor
-Seu nome e email
+- `ADB Install.dll`
+- `ADB Install.exe`
+- Source code in `Source.cs`
 
-Licença
-Este projeto está licenciado sob a licença XYZ. Veja o arquivo LICENSE para mais detalhes.
+## Adb.ps1
+
+A PowerShell script to install the latest version of Platform Tools. The installation is done in `C:\`, so it requires administrator privileges to run.
+
+### Usage
+
+1. Open PowerShell as administrator.
+2. Navigate to the directory containing `adb.ps1`.
+3. Run the following command: `.\adb.ps1`.
+4. Follow the instructions on the screen.
+
+Note: This script only works on Windows.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
